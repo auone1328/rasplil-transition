@@ -1,0 +1,331 @@
+@font-face{
+    font-family: 'Bignoodletitling';
+    src: url('./font/bignoodletitling.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-size: 25px;
+    line-height: 100%;
+    font-weight: 300;
+    color: black;
+    overflow: scroll;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.topheader{
+    font-family: 'Bignoodletitling';
+    background: #FAEEDD;
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 99999;
+}
+
+.topheader .container{
+    margin: 0px 20px
+}
+
+.logo{
+    width: 510px;
+    font-size: 5vh;
+    margin-left: 1vw;
+    letter-spacing: 2px;
+    user-select: none;
+    display: flex;
+    padding-top: 2vh;
+}
+
+.logo img + .logo_text{
+    margin-left: 0.5em;
+}
+
+.logo_img{
+    width: 5vw;
+    height: 5vh;
+    margin-top: 1vh;
+}
+
+.wrapper{
+    min-height: 100%;
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    top: -10%;
+    left: -10%;
+    right: -10%;
+}
+._container{
+    max-width: 1000px;
+    margin: 0px auto;
+    padding: 50px 20px;
+}
+.banner{
+    min-height: 100%;
+}
+.banner>.cont{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.banner_wrapper{
+    text-transform: uppercase;
+    position: relative;
+    z-index: 0;
+}
+.bx-wrapper{
+    width: 100%; 
+    transform: translateY(250%); 
+    z-index: 1;
+    color: #fff;
+}
+.banner_image{
+    background: url('./images/sk.jpg')#696969;
+    background-blend-mode: multiply,normal;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.banner h2{
+    font-family: 'Bignoodletitling';
+    font-size: 3rem;
+    z-index: 20;
+    transform: translate(-80%, 50%)
+}
+.banner p{
+    font-family: 'Bignoodletitling';
+    font-size: 2rem;
+    z-index: 20;
+    transform: translate(-80%, 50%)
+}
+.goods{
+    font-family: 'Bignoodletitling';
+    position: relative;
+    height: 140%;
+    z-index: 2;
+    color: black;
+    background: #FAEEDD;
+    font-size: 25px;
+}
+.goods::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    transform: translateY(-50px);
+    background: linear-gradient(180deg, rgba(199, 168, 199, 0) 5%, #FAEEDD 100%);
+}
+.center{
+    text-align: center;
+}
+.center.big_size{
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+.box-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.car-box{
+    width: 18rem;
+    height: 28rem;
+    background: #fff;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-sizing: border-box;  
+    border-radius: 15px;
+}
+.car-box:hover{
+    border: 2px solid #77DDE7
+}
+.img{
+    width: 18rem;
+    height: 13rem;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    border-radius: 15px;
+}
+.desc h4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px; 
+}
+
+.spec li{
+    position: relative;
+    font-size: 16px;
+    left: 10%;
+    z-index: 1;
+}
+.spec{
+    height: 9rem;
+}
+.price p{
+    position: relative;
+    font-size: 25px;
+    left: 10%;
+    z-index: 1;
+}
+.filter{
+    display: inline-flex;
+    margin: 1rem;
+    padding: 0.7rem 2rem;
+    border-radius: 2.7rem;
+    cursor: pointer;
+    border: 0.15rem solid black;
+}
+.filter.mixitup-control-active{
+    background: black;
+    color: white;
+}
+.box-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px; 
+}
+.none-point{
+    list-style-type: none;    
+}
+.contact_image{
+    background: url('./images/market.jpg')#696969;
+    background-blend-mode: multiply,normal;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.contact{
+    font-family: 'Bignoodletitling';
+    height: 110%;
+}
+
+.contacts{
+    padding: 5%;
+    text-align: center;
+    width: 100%
+}
+
+.contacts p{
+    padding: 20px 90px 0px;
+    color: #fff
+}
+
+.contacts span{
+    display: inline-block;
+    width: 153px;
+    height: 2px;
+    background-color: #77DDE7;
+
+}
+
+.textinput{
+    margin: 40px 0;
+}
+
+.textinput p, .textmsg p{
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 5px;
+    letter-spacing: 2px;
+}
+
+.textinput p span, .textmsg p span{
+    color: #77DDE7;
+    margin-left: 5px;
+}
+
+.textinput input{
+    border: 0;
+    border-bottom: 1px solid #cacaca;
+    width: 90%;
+    height: 40px;
+    outline: 0;
+}
+
+.textmsg textarea{
+    border: 0;
+    border-bottom: 1px solid #cacaca;
+    width: 95%;
+    height: 80px;
+    outline: 0;
+    padding-bottom:10px;
+}
+
+.contact form{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#submit{
+    width: 205px;
+    height: 50px;
+    letter-spacing: 2px;
+    background: #77DDE7;
+    border: 1px solid #77DDE7;
+    color: #fff;
+    display: block;
+    margin: 50px auto 0;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#submit:hover{
+    color: #77DDE7;
+    transition: 0.5s;
+    background: white;
+}
+.textinput input:focus, .textmsg textarea:focus{
+    box-shadow: 0px 1px 3px 4px rgba(119, 221, 231, 0.5);
+}
+.contact h4{
+    color: #fff;
+}
+.ad{
+    background-color: #FAEEDD;
+}
+.ad_image{
+    background: url('./images/market.jpeg')#696969;
+    background-blend-mode: multiply,normal;
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    z-index: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.video{
+    position: relative;
+    z-index: 2;
+    height: 50rem;
+    transform: translate(70%, 40%);
+}
+.basement{
+    position: relative;
+    height: 10%;
+    z-index: 2;
+    color: black;
+    background: #FAEEDD;
+    font-size: 15px;
+    transform: translateY(400%);
+}
+.inner{
+    position: relative;
+    align-content: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
